@@ -35,18 +35,19 @@
     </div>
 
     <section class="contactsection">
-        <form action="" class="formcontact">
+        <form method="post" action="http://127.0.0.1:8000/contact" class="formcontact">
+            {% csrf_token %}
             <h2>Contact Us</h2>
             <p>Leave a Message of any problem that you face or any suggestion or anything to tell me.</p>
 
             <div class="contactname">
-                <label for="Name">Name : </label>
-                <input type="text" type="name">
+                <label for="name">Name : </label>
+                <input type="text" name="name">
             </div>
 
             <div class="contactemail">
                 <label for="email">Email : </label>
-                <input type="email" id="email">
+                <input type="email" id="email" name="email">
             </div>
 
             <div class="contactmessage">
