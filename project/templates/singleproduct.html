@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'index.css'%}">
 </head>
 
 <body>
 
     <div class="header">
-        <a href="#" class="logo"><img src="img/Capture-removebg-preview.png"></a>
+        <a href="#" class="logo"><img src="{%static 'img/Capture-removebg-preview.png' %}"></a>
         <div>
             <ul class="navbar">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="http://127.0.0.1:8000/" class="active">Home</a></li>
+                <li><a href="http://127.0.0.1:8000/shop">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="http://127.0.0.1:8000/about">About</a></li>
+                <li><a href="http://127.0.0.1:8000/contact">Contacts</a></li>
+                <li><a href="http://127.0.0.1:8000/cart"><i class="fa-solid fa-bag-shopping"></i></a></li>
             </ul>
         </div>
 
@@ -29,19 +31,19 @@
 
     <section class="ordersetting">
         <div class="singleproimage">
-            <img src="img/products/f1.jpg" class="mainimage">
+            <img src="{%static 'img/products/f1.jpg' %}" class="mainimage">
             <div class="smallimagegroup">
                 <div class="samllimage1">
-                    <img src="img/products/f1.jpg" class="smallimage">
+                    <img src="{%static 'img/products/f1.jpg' %}" class="smallimage">
                 </div>
                 <div class="samllimage1">
-                    <img src="img/products/f2.jpg" class="smallimage">
+                    <img src="{%static 'img/products/f2.jpg' %}" class="smallimage">
                 </div>
                 <div class="samllimage1">
-                    <img src="img/products/f2.jpg" class="smallimage">
+                    <img src="{%static 'img/products/f2.jpg' %}" class="smallimage">
                 </div>
                 <div class="samllimage1">
-                    <img src="img/products/f3.jpg" class="smallimage">
+                    <img src="{%static 'img/products/f3.jpg' %}" class="smallimage">
                 </div>
             </div>
         </div>
@@ -76,7 +78,7 @@
         <div class="wrapper">
             <div class="procontainer">
                 <div class="product1">
-                    <img src="img/products/f1.jpg" alt="">
+                    <img src="{%static 'img/products/f1.jpg' %}">
                     <div class="productdetails">
                         <span>Adidas</span>
                         <h4>Cartton-Astronaut T-Shirts</h4>
@@ -99,7 +101,7 @@
             <!-- 2 for products -->
             <div class="procontainer">
                 <div class="product1">
-                    <img src="img/products/f2.jpg" alt="">
+                    <img src="{%static 'img/products/f2.jpg' %}">
                     <div class="productdetails">
                         <span>Adidas</span>
                         <h4>Cartton-Astronaut T-Shirts</h4>
@@ -123,7 +125,7 @@
             <!-- 3 for products -->
             <div class="procontainer">
                 <div class="product1">
-                    <img src="img/products/f3.jpg" alt="">
+                    <img src="{%static 'img/products/f3.jpg' %}">
                     <div class="productdetails">
                         <span>Adidas</span>
                         <h4>Cartton-Astronaut T-Shirts</h4>
@@ -146,7 +148,7 @@
             <!-- 4 for products -->
             <div class="procontainer">
                 <div class="product1">
-                    <img src="img/products/f4.jpg" alt="">
+                    <img src="{%static 'img/products/f4.jpg' %}">
                     <div class="productdetails">
                         <span>Adidas</span>
                         <h4>Cartton-Astronaut T-Shirts</h4>
@@ -183,7 +185,7 @@
     <footer class="footer">
 
         <div class="firstfootercolumn">
-            <a href="#"><img src="img/Capture-removebg-preview.png"></a>
+            <a href="#"><img src="{%static 'img/Capture-removebg-preview.png' %}"></a>
             <h4>Contact</h4>
             <p><strong>Adress:</strong> Pakistan Rawalpindi WahCantt</p>
             <p><strong>Phone:</strong> 03183704036 / 03135304036</p>
@@ -242,11 +244,11 @@
             <h3>Install App</h3>
             <p>From App Store or Google Play</p>
             <div class="download">
-                <img class="dimg1" src="img/pay/app.jpg">
-                <img class="dimg2" src="img/pay/play.jpg">
+                <img class="dimg1" src="{%static 'img/pay/app.jpg' %}">
+                <img class="dimg2" src="{%static 'img/pay/play.jpg' %}">
             </div>
             <p>Secured Payment Gateways</p>
-            <img src="img/pay/pay.png">
+            <img src="{%static 'img/pay/pay.png' %}">
         </div>
 
     </footer>

@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'index.css'%}">
 </head>
 
 <body>
 
     <div class="header">
-        <a href="#" class="logo"><img src="img/Capture-removebg-preview.png"></a>
+        <a href="#" class="logo"><img src="{%static 'img/Capture-removebg-preview.png' %}"></a>
         <div>
             <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="http://127.0.0.1:8000/">Home</a></li>
+                <li><a href="http://127.0.0.1:8000/shop">Shop</a></li>
                 <li><a href="Blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contacts</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="http://127.0.0.1:8000/about">About</a></li>
+                <li><a href="http://127.0.0.1:8000/contact" class="active">Contacts</a></li>
+                <li><a href="http://127.0.0.1:8000/cart"><i class="fa-solid fa-bag-shopping"></i></a></li>
             </ul>
         </div>
 
@@ -57,7 +59,7 @@
 
         <div class="peoples">
             <div class="people1start">
-                <img src="img/people/Capture.PNG">
+                <img src="{%static 'img/people/capture.PNG' %}">
                 <div class="people1information">
                     <h5>Waleed Ahmed</h5>
                     <p>SEO</p>
@@ -67,7 +69,7 @@
             </div>
             
             <div class="people2start">
-                <img src="img/people/Capture.PNG">
+                <img src="{%static 'img/people/capture.PNG' %}">
                 <div class="people2information">
                     <h5>Waleed Ahmed</h5>
                     <p>SEO</p>
@@ -77,7 +79,7 @@
             </div>
 
             <div class="people3start">
-                <img src="img/people/Capture.PNG">
+                <img src="{%static 'img/people/capture.PNG' %}">
                 <div class="people3information">
                     <h5>Waleed Ahmed</h5>
                     <p>SEO</p>
@@ -98,7 +100,7 @@
     <footer class="footer">
 
         <div class="firstfootercolumn">
-            <a href="#"><img src="img/Capture-removebg-preview.png"></a>
+            <a href="#"><img src="{%static 'img/Capture-removebg-preview.png' %}"></a>
             <h4>Contact</h4>
             <p><strong>Adress:</strong> Pakistan Rawalpindi WahCantt</p>
             <p><strong>Phone:</strong> 03183704036 / 03135304036</p>
@@ -137,11 +139,11 @@
             <h3>Install App</h3>
             <p>From App Store or Google Play</p>
             <div class="download">
-                <img class="dimg1" src="img/pay/app.jpg">
-                <img class="dimg2" src="img/pay/play.jpg">
+                <img class="dimg1" src="{%static 'img/pay/app.jpg' %}">
+                <img class="dimg2" src="{%static 'img/pay/play.jpg' %}">
             </div>
             <p>Secured Payment Gateways</p>
-            <img src="img/pay/pay.png">
+            <img src="{%static 'img/pay/pay.png' %}">
         </div>
 
     </footer>
